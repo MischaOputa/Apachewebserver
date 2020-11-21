@@ -7,6 +7,7 @@
 - Open C:/Apache24/conf/httpd.conf
 - Replace #ServerName www. ... with ServerName localhost
 - Remove # in LoadModule rewrite... Line
+---OPEN BROWSER AND TYPE LOCALHOST!! 
 - Open CMD in Administrator Mode
 - Use the Command "cd /Apache24/bin"
 - Use the Command "httpd -k install"
@@ -27,6 +28,7 @@
 - Open CMD in Administrator Mode
 - Use Command "cd /Apache24/bin"
 - Use Command "httpd -k restart"
+---OPEN BROWSER AND GO TO LOCALHOST; should view php page info
 
 ## MySQL Database
 - Download MySQL
@@ -35,7 +37,7 @@
 - Set Root Password (your administrator Password) ! Don't forget it!
 - Next Next Next
 - Test your Database with Username "root" and your password
-
+NOW YOU HAVE A DB TO ADD ALL YOUR NEW WEBSITES :)
 ## You Are done!
 - Start creating your own Websites !!!Have fun :)
                           Apache HTTP Server
