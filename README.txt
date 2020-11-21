@@ -1,4 +1,43 @@
+-- Steps and Download Links
 
+## Apache Webserver ##
+- Download Apache
+       https://www.apachelounge.com/download/
+- Copy Paste Apache24 Folder in C:/
+- Open C:/Apache24/conf/httpd.conf
+- Replace #ServerName www. ... with ServerName localhost
+- Remove # in LoadModule rewrite... Line
+- Open CMD in Administrator Mode
+- Use the Command "cd /Apache24/bin"
+- Use the Command "httpd -k install"
+- Use the Command "httpd -k start"
+ 
+## PHP 
+-  Download PHP (thread safe)
+      https://windows.php.net/qa/
+- Create Folder "php" in C:/
+- Copy/Paste PHP in C:/php
+- Rename C:/php/php.ini-development to C:/php/php.ini
+- Open C:/Apache24/httpd.conf
+- Add the Following Lines:
+      PHPIniDir "C:/php"
+      LoadModule php7_module "C:/php/php7apache2_4.dll"
+      AddHandler application/x-httpd-php .php
+- Add index.php in "DirectoryIndex index.html" Line
+- Open CMD in Administrator Mode
+- Use Command "cd /Apache24/bin"
+- Use Command "httpd -k restart"
+
+## MySQL Database
+- Download MySQL
+      dev.mysql.com/downloads/windows/installer/8.0.html
+- Install By clicking Next next execute....
+- Set Root Password (your administrator Password) ! Don't forget it!
+- Next Next Next
+- Test your Database with Username "root" and your password
+
+## You Are done!
+- Start creating your own Websites !!!Have fun :)
                           Apache HTTP Server
 
   What is it?
